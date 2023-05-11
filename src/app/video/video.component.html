@@ -1,0 +1,21 @@
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let Video of listVideo; let i=index;">
+    
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://d44ri6pmeripj.cloudfront.net/morilee/wp-content/uploads/2022/10/24162801/product_img_2523_feature_img-scaled.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">title: {{Video.title}}</h5>
+            <h5 class="card-title">genre: {{Video.genre}}</h5>
+            <h5 class="card-title">public: {{Video.public}}</h5>
+            <h5 class="card-title">nbrShared: {{Video.nbrShared}}</h5>
+            <p class="card-text"></p>
+            <!--button class="btn btn-primary" (click)="buy(i)"[disabled]="Product.quantity==0">Buy</button>
+            <button class="btn btn-success" (click)="like(i)">Like</button>
+            <button class="btn btn-primary" [routerLink]="['/products/',Product.id]">Details</button>
+            <button class="btn btn-danger" (click)="delete(Product.id)">delete</button-->
+          </div>
+        </div>
+      
+    </div>
+  </div>
